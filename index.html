@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nagwa | Projectile Motion</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Projectile Motion</h1>
+        <div class="results">
+            <p>Distance X: <strong class="distanceX"></strong></p>
+            <p>Distance Y: <strong class="distanceY"></strong></p>
+        </div>
+        <canvas id="canvas" width="900" height="500">
+            Your browser does not support HTML5 Canvas.
+        </canvas>
+
+        <div class="controls">
+            <input type="number" placeholder="Angle" name="" id="angle" min="0">
+            <input type="number" name="" placeholder="Velocity" id="velocity" min="0"> 
+            <button id="starter">Start</button>
+            <button id="reseter">Reset</button>
+
+            <div class="tooltip">Resources
+                <span class="tooltiptext">Learn More About Projectile Motion :))
+                    <br>
+                    <a href="https://www.texasgateway.org/resource/53-projectile-motion" target="_blank">Texas Getway.</a>
+                    <br>
+                    <a href="https://www.saratogaschools.org/webpages/tsanders/notes.cfm?subpage=1381204" target="_blank">Startoga Springs.</a>
+                </span>
+                
+            </div>
+        </div>
+
+        <img src="cannon1.png" id="cannon" alt="Projectile Cannon">
+        <script type="text/javascript" src="canvasapp.js"></script>
+    </body>
+</html>
